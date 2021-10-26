@@ -1,0 +1,8 @@
+2021-Oct-24 22:02:25,892 [main] com.codekuul.uitest.SignUpPageTest 
+ INFO  url is lounchedhttps://ijmeet.com
+2021-Oct-24 22:02:32,283 [main] com.codekuul.uitest.SignUpPageTest 
+ INFO  clicked on sign up button
+2021-Oct-24 22:02:32,775 [main] com.codekuul.uitest.SignUpPageTest 
+ INFO  switch inside the frame
+2021-Oct-24 22:02:32,929 [main] com.codekuul.uitest.SignUpPageTest 
+ INFO  switch outside the frame
