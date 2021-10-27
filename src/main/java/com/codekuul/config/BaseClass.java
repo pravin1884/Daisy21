@@ -7,22 +7,21 @@ import com.codekuul.keywords.UiKeywords;
 import com.codekuul.util.PropertiesFile;
 
 public class BaseClass extends UiKeywords {
-	
 
 	@BeforeMethod
 	public void setUP() {
-	
-		openBrowser("crome");
+		Application app = new Application();
+		openBrowser(app.getBrowser());
 		UiKeywords keyword = new UiKeywords();
 		this.driver = keyword.getDriver();
-		driver.get(PropertiesFile.getProperty("/src/main/resources/application.properties","daisy.dev.app.url"));
-
+		driver.get(app.getAppUrl());
+        Arrays
 	}
+
 	@AfterMethod
 	public void tearDown() {
 		closeBrowser();
 
 	}
-	
 
 }
