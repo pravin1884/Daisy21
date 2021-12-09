@@ -25,4 +25,18 @@ public class Application {
    		return  PropertiesFile.getProperty(FILEPATH, "daisy.dev.app.password");
 
    	}
+       public  String getMeetingId() {
+      		return  PropertiesFile.getProperty(FILEPATH, "daisy.dev.app.meetingid");
+
+      	}
+       public  String getInvalidUserName() {
+      		return  PropertiesFile.getProperty(FILEPATH, "daisy.dev.app.invalid.username");
+
+      	}
+       public  String getQaEmailId() {
+     		return  PropertiesFile.getProperty(FILEPATH, "daisy.qa.app.email");
+
+     	}
+       
+       
 }

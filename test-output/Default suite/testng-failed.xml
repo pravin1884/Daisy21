@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.codekuul.uitest.HomePageTests">
+      <class name="com.codekuul.uitest.MyAccountPageTest">
         <methods>
-          <include name="verifyTitleOfHomePage"/>
-          <include name="verifyIfUserRedirectsToJoinMeetingPage"/>
+          <include name="validateWebinarLink"/>
           <include name="tearDown"/>
           <include name="setUP"/>
         </methods>
-      </class> <!-- com.codekuul.uitest.HomePageTests -->
+      </class> <!-- com.codekuul.uitest.MyAccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

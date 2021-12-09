@@ -1,7 +1,5 @@
 package com.codekuul.keywords;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -11,14 +9,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.ClickAndHoldAction;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openxmlformats.schemas.drawingml.x2006.chart.CTPageSetup;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UiKeywords {
-	public static RemoteWebDriver driver = null;
+	public RemoteWebDriver driver = null;
+	private static UiKeywords uikeywords;
+	static {
+		uikeywords = new UiKeywords();
+	}
+
+	public static UiKeywords getInstance() {
+		return uikeywords;
+
+	}
+
+	private UiKeywords() {
+
+	}
 
 	/**
 	 * This keyword is used to open browser
@@ -32,9 +42,9 @@ public class UiKeywords {
 	 * @author pravin
 	 *
 	 */
-
+    
 	public void openBrowser(String browserName) {
-		if (browserName.equalsIgnoreCase("crome")) {
+		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 
@@ -105,7 +115,7 @@ public class UiKeywords {
 
 	}
 
-	public RemoteWebDriver getDriver() {
+	public  RemoteWebDriver getDriver() {
 		return driver;
 	}
 
@@ -134,15 +144,35 @@ public class UiKeywords {
 
 	public void switchToFrameAt(String idorName) {
 		driver.switchTo().frame(idorName);
+
 	}
+
+	public void switchToFrameAt(WebElement element) {
+		driver.switchTo().frame(element);
+
+	}
+	
 
 	public void enterText(String object, String textToEnter) {
 		String[] parts = object.split("##");
 		getWebElement(parts[0], parts[1]).sendKeys(textToEnter);
 	}
 
-	public String getText(String locatorType, String locatorValue) {
+	public String getPText(String locatorType, String locatorValue) {
 		String text = getWebElement(locatorType, locatorValue).getText();
+		return text;
+
+	}
+	public String getAttributeValue(WebElement element) {
+		String text = element.getAttribute("class");
+		return text;
+
+	}
+	
+
+	public String getErrMessageText(WebElement webelement) {
+
+		String text = webelement.getText();
 		return text;
 
 	}
@@ -159,24 +189,22 @@ public class UiKeywords {
 	public Actions sendCapitalizeString(String text) {
 		Actions action = new Actions(driver);
 		return action.keyDown(Keys.SHIFT).sendKeys(text);
-        
+
 	}
+
 	public void getWindow(String winUrl) {
 		Set<String> windows = driver.getWindowHandles();
-		for (String window  : windows) {
+		for (String window : windows) {
 			String currUrl = driver.switchTo().window(winUrl).getCurrentUrl();
-			if(currUrl.contains(winUrl)) {
+			if (currUrl.contains(winUrl)) {
 				break;
-				
-			}
-			else {
+
+			} else {
 				continue;
 			}
 		}
-		
 
 	}
-	
 
 	public WebElement getWebElement(String locatorType, String locatorValue) {
 		WebElement element = null;

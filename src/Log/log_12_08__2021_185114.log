@@ -1,0 +1,4 @@
+2021-Dec-08 18:51:14,370 [main] com.codekuul.uitest.HomePageTests 
+ INFO  assigning expectedtitle to variable
+2021-Dec-08 18:51:14,389 [main] com.codekuul.uitest.HomePageTests 
+ INFO  verifing that expected url is equal to current url
