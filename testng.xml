@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<<<<<<< HEAD
 <listeners>
   <listener class-name="com.codekuul.util.MyListners"/>
   </listeners>
@@ -14,5 +15,8 @@
       <class name="com.codekuul.uitest.JoinMeetingPageTests"/>
       
     </classes>
+=======
+  <test thread-count="5" name="Test">
+>>>>>>> 13c811e8f8fccbfaf1709822e1693340b0bede32
   </test> <!-- Test -->
 </suite> <!-- Suite -->
