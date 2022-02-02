@@ -1,7 +1,8 @@
-C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\stepdefinations\ParametrizationDemo.java
+C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\WebinarPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\SupportPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\AboutUsPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\keywords\UiKeywords.java
+C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\ChangePasswordPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\DashboardPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\HostMeetingPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\SignUpPage.java
@@ -12,11 +13,11 @@ C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\HomePag
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\ContactUsPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\JoinMeetingPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\util\MyListners.java
+C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\ProfInfoPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\SignInPage.java
-C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\stepdefinations\HomePageSteps.java
+C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\ArabicLanguageHomePage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\config\BaseClass.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\util\PropertiesFile.java
-C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\stepdefinations\FirstStepDefination.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\MyAccountPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\pages\ContactSalesPage.java
 C:\Users\pravin\eclipse-workspace\Daisy\src\main\java\com\codekuul\util\Locaters.java

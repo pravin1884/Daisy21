@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -44,6 +45,8 @@ public class UiKeywords {
 	 */
     
 	public void openBrowser(String browserName) {
+		/*ChromeOptions options = new ChromeOptions();
+		options.*/
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -174,6 +177,13 @@ public class UiKeywords {
 
 		String text = webelement.getText();
 		return text;
+		
+
+	}
+	
+	public void clearText(WebElement webelement) {
+		//driver.webelement
+		
 
 	}
 

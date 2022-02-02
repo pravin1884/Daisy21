@@ -14,58 +14,58 @@ public class MyAccountPage {
 	}
 
 	@FindBy(css = "div[class='mtab-add'] button:nth-child(1)")
-	public WebElement upCommingMeetingTitle;
+	private WebElement upCommingMeetingTitle;
 
 	@FindBy(css = "div[class='mtab-add'] button:nth-child(1)+button")
-	public WebElement previousMeetingsTitle;
+	private WebElement previousMeetingsTitle;
 
 	@FindBy(css = "div[class='mtab-add'] button:last-child")
-	public WebElement scheduleMeetingButton;
+	private WebElement scheduleMeetingButton;
 
 	@FindBy(css = "input[name='upcoming_meeting_search_key']")
-	public WebElement meetingIdSearchBox;
+	private WebElement meetingIdSearchBox;
 
 	@FindBy(css = "input[id='upcoming_meeting_start_date']")
-	public WebElement fromDatecalendar;
+	private WebElement fromDatecalendar;
 
 	@FindBy(css = "div[id='datepicker-popup2']")
-	public WebElement toDateCalendar;
+	private WebElement toDateCalendar;
 
 	@FindBy(css = "div[class='col-xl-2 col-lg-3']>a[class='btn btn-default mbtn search_value_upcoming_meeting']")
-	public WebElement searchButton;
+	private WebElement searchButton;
 
 	@FindBy(css = "button[class='btn btn-warning btn-hover-text-primary schedule-new-meet-btn ']")
-	public WebElement bottomScheduleMeetingButton;
+	private WebElement bottomScheduleMeetingButton;
 
 	@FindBy(css = "#webinartab>a>span")
-	public WebElement webinarLink;
+	private WebElement webinarLink;
 
 	@FindBy(css = "#profiletab>a[class='btn btn-default']>span[class='navi-text font-size-lg']")
-	public WebElement profileInformationLink;
+	private WebElement profileInformationLink;
 
 	@FindBy(css = "div[class='card-body px-md-3 pt-4']>div+div div:nth-last-child(2)")
-	public WebElement changePasswordLink;
+	private WebElement changePasswordLink;
 
 	@FindBy(css = "div[class='card-body px-md-3 pt-4']>div+div div:nth-last-child(1)")
-	public WebElement logOutLink;
+	private WebElement logOutLink;
 
 	@FindBy(xpath = "//span[contains(text(),'Home')]")
-	public WebElement homePageLink;
+	private WebElement homePageLink;
 
 	@FindBy(xpath = "//ul[@class='custom-navbar-cl-page-navigation-st bottom-navbar nav page-navigation ']//child::li[3]//child::a//span")
-	public WebElement inviteLink;
+	private WebElement inviteLink;
 
 	@FindBy(xpath = "//li[@class='nav-item']/child::a/child::span[contains(text(),'Application')]")
-	public WebElement applicationLink;
+	private WebElement applicationLink;
 
 	@FindBy(css = "span>.project-first-latter")
-	public WebElement logOutButton;
+	private WebElement logOutButton;
 	
 	@FindBy(css = "a[href*='/logout']")
-	public WebElement logOutInnerLink;
+	private WebElement logOutInnerLink;
 	
 	@FindBy(css=".mirror-view-language")
-	public WebElement languageChangeTab;
+	private WebElement languageChangeTab;
 
 	public String getMyAccountPageUrl() {
 		return keyword.getCurrentUrl();

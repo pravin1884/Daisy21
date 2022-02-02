@@ -60,7 +60,9 @@ public class ParametrizationDemo {
 	
 	@Given("i have following table")
 	public void i_have_following_table(io.cucumber.datatable.DataTable dataTable) {
-	   m = dataTable.asMap(String.class, List.class);
+	  // Map<String,List<Integer>>  m = dataTable.asMap(String.class,List.class );
+		 List l = dataTable.column(1);
+	    System.out.println(l);
 	}
 
 	@Then("i print table")
